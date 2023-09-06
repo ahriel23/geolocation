@@ -23,7 +23,8 @@
     }
    stage('upload artifact'){
         steps{
-            sh 'curl --upload-file target/bioMedical-0.0.2-SNAPSHOT.jar -u admin:devops -v http://ec2-35-172-150-179.compute-1.amazonaws.com:8081/repository/maven-nexus-repo/'
+            sh 'curl --upload-file target/bioMedical-0.0.2-SNAPSHOT.jar -u admin:devops -v nexus url: http://198.58.119.40:8081/#browse/browse'
+'
         }
     }
 
