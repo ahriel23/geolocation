@@ -6,7 +6,7 @@ pipeline{
            sh 'echo hello' 
         }
     }
-    stage('clean artifact'){
+    stage('clean artifacts'){
         steps{
             sh 'echo hi'
         }
